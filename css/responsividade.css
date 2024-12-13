@@ -1,6 +1,6 @@
 @media screen and (max-width: 1068px) {
   nav img {
-    width: 137px;
+    width: 80px;
     margin-left: 10px;
     border-radius: 13px;
   }
@@ -12,9 +12,13 @@
 
   #inicio {
     height: 87.4vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
   }
 
   .fundo {
+    backdrop-filter: blur(5px) contrast(65%);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -26,20 +30,21 @@
     padding: 40px;
   }
 
-  .fundo img {
+  .fundo video {
     display: none;
   }
 
   #sobre {
     width: 100%;
     height: 100vh;
-    background-position: 80%;
+    background-position: center;
   }
 
   .fundo-sobre {
-    backdrop-filter: blur(7px) contrast(60%);
+    backdrop-filter: blur(3.5px) contrast(60%);
     width: 100%;
     top: 87.8%;
+    padding: 60px 0;
   }
 
   .textos {
@@ -60,7 +65,7 @@
   }
 
   #serviços {
-    height: 180vh;
+    height: 140vh;
   }
 
   .lista-serviços {
@@ -76,7 +81,7 @@
 
   .fundo-trabalhos {
     padding: 60px 15px;
-    height: 62.8vh;
+    height: 63.8vh;
   }
 
   .container-imagens {
