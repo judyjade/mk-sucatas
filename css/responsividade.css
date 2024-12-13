@@ -43,7 +43,6 @@
   .fundo-sobre {
     backdrop-filter: blur(3.5px) contrast(60%);
     width: 100%;
-    height: 100%;
     top: 85.8%;
     padding: 60px 0;
   }
@@ -66,7 +65,7 @@
   }
 
   #serviços {
-    height: 140vh;
+    height: 145vh;
   }
 
   .lista-serviços {
