@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-fundo: #fbf9f9;
+  --cor-fundo-serviços: #d9d9d9;
+  --cor-rodape: #cfcfc4;
+  --fonte-texto: "Josefin Sans", sans-serif;
+  --fonte-titulo: "Jomolhari", serif;
+  --fonte-redes_sociais: "Jomhuria", serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-texto);
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Largura da barra vertical */
+  height: 12px; /* Altura da barra horizontal */
+}
+
+/* Estiliza o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #cacaca;
+}
+
+/* Estiliza o "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px; /* Deixa as bordas arredondadas */
+}
+
+/* Estiliza o "polegar" quando o mouse está em cima */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+header {
+  background: #e2e2e2;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+nav a {
+  font-family: var(--fonte-titulo);
+  color: #000000;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 50px;
+  transition: 0.5s all;
+}
+
+nav a:hover {
+  font-size: 35px;
+}
+
+#inicio {
+  background: url(/img/img-05.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+
+.fundo {
+  backdrop-filter: blur(3.8px) contrast(76%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  text-align: center;
+  height: 85vh;
+}
+
+.fundo p {
+  font-size: 47px;
+  padding: 110px;
+  margin-top: 15%;
+}
+
+.fundo video {
+  width: 100%;
+  height: 70vh;
+  margin-right: 40px;
+  margin-top: 10%;
+}
+
+#sobre {
+  background: url(/img/img-10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fundo-sobre {
+  padding: 50px 0;
+  backdrop-filter: blur(5.5px) contrast(60%);
+  width: 100%;
+  height: 85vh;
+  align-items: center;
+}
+
+.textos {
+  align-items: center;
+  margin: 130px 0 60px 0;
+  font-size: 37px;
+}
+
+.texto1 {
+  margin-left: 50px;
+  margin-right: 450px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.texto2 {
+  margin-right: 50px;
+  margin-left: 450px;
+  text-align: center;
+}
+
+#serviços {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 60px;
+}
+
+.lista-serviços {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 20px 50px 20px;
+}
+
+.itens-serviços,
+.itens-serviços2,
+.itens-serviços3,
+.itens-serviços4 {
+  background-color: var(--cor-fundo-serviços);
+  padding: 70px 40px;
+  border-radius: 15px;
+  margin: 5px;
+  font-size: 27px;
+  text-align: center;
+  align-items: center;
+}
+
+#trabalhos {
+  background: url(/img/img-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fundo-trabalhos {
+  backdrop-filter: blur(3.8px) contrast(40%);
+  text-align: center;
+  padding: 70px;
+  height: 78.5vh;
+}
+
+.fundo-trabalhos p {
+  font-family: var(--fonte-titulo);
+  font-size: 42px;
+}
+
+.container-imagens {
+  width: 80%;
+  height: 65vh;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-imagens img {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.container-imagens img.active {
+  opacity: 1;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    width: 100vw;
+    height: 65vh;
+}
+
+#contato h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 45px;
+}
+
+#contato a {
+  display: flex;
+  font-family: var(--fonte-redes_sociais);
+  color: black;
+  text-decoration: none;
+  font-size: 48px;
+  align-items: center;
+  transition: 0.5s all;
+}
+
+#contato a:hover {
+  font-size: 60px;
+}
+
+#contato img {
+  margin: 20px;
+  width: 80px;
+}
+
+#contato img:first-child {
+  margin-bottom: 40px;
+}
+
+.logos {
+  display: inline;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: var(--cor-rodape);
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  padding: 50px 0;
+}
